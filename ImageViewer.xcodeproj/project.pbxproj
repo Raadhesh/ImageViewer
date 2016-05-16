@@ -14,6 +14,9 @@
 		B99B5B811CCAC16000730F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99B5B7F1CCAC16000730F34 /* LaunchScreen.storyboard */; };
 		B99B5B8C1CCAC16000730F34 /* ImageViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B5B8B1CCAC16000730F34 /* ImageViewerTests.swift */; };
 		B99B5B971CCAC16000730F34 /* ImageViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B5B961CCAC16000730F34 /* ImageViewerUITests.swift */; };
+		B99B5BB71CCAE1AC00730F34 /* CradleMountain.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B99B5BB41CCAE1AC00730F34 /* CradleMountain.JPG */; };
+		B99B5BB81CCAE1AC00730F34 /* Laguna69.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B99B5BB51CCAE1AC00730F34 /* Laguna69.JPG */; };
+		B99B5BB91CCAE1AC00730F34 /* PatagoniaSky.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B99B5BB61CCAE1AC00730F34 /* PatagoniaSky.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		B99B5B921CCAC16000730F34 /* ImageViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99B5B961CCAC16000730F34 /* ImageViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerUITests.swift; sourceTree = "<group>"; };
 		B99B5B981CCAC16000730F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B99B5BB41CCAE1AC00730F34 /* CradleMountain.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CradleMountain.JPG; sourceTree = "<group>"; };
+		B99B5BB51CCAE1AC00730F34 /* Laguna69.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Laguna69.JPG; sourceTree = "<group>"; };
+		B99B5BB61CCAE1AC00730F34 /* PatagoniaSky.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PatagoniaSky.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		B99B5B751CCAC16000730F34 /* ImageViewer */ = {
 			isa = PBXGroup;
 			children = (
+				B99B5BB31CCAE1AC00730F34 /* Images */,
 				B99B5B761CCAC16000730F34 /* AppDelegate.swift */,
 				B99B5B781CCAC16000730F34 /* ViewController.swift */,
 				B99B5B7A1CCAC16000730F34 /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				B99B5B981CCAC16000730F34 /* Info.plist */,
 			);
 			path = ImageViewerUITests;
+			sourceTree = "<group>";
+		};
+		B99B5BB31CCAE1AC00730F34 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B99B5BB41CCAE1AC00730F34 /* CradleMountain.JPG */,
+				B99B5BB51CCAE1AC00730F34 /* Laguna69.JPG */,
+				B99B5BB61CCAE1AC00730F34 /* PatagoniaSky.JPG */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +246,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99B5BB81CCAE1AC00730F34 /* Laguna69.JPG in Resources */,
 				B99B5B811CCAC16000730F34 /* LaunchScreen.storyboard in Resources */,
 				B99B5B7E1CCAC16000730F34 /* Assets.xcassets in Resources */,
 				B99B5B7C1CCAC16000730F34 /* Main.storyboard in Resources */,
+				B99B5BB91CCAE1AC00730F34 /* PatagoniaSky.JPG in Resources */,
+				B99B5BB71CCAE1AC00730F34 /* CradleMountain.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +504,7 @@
 				B99B5B9D1CCAC16000730F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B99B5B9E1CCAC16000730F34 /* Build configuration list for PBXNativeTarget "ImageViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +513,7 @@
 				B99B5BA01CCAC16000730F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B99B5BA11CCAC16000730F34 /* Build configuration list for PBXNativeTarget "ImageViewerUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +522,7 @@
 				B99B5BA31CCAC16000730F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
