@@ -20,36 +20,36 @@ class ViewController: UIViewController {
         
         let swipeLeftGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
         swipeLeftGestureRecognizer.numberOfTouchesRequired = 3
-        swipeLeftGestureRecognizer.direction = .Left
+        swipeLeftGestureRecognizer.direction = .left
         imageView.addGestureRecognizer(swipeLeftGestureRecognizer)
         
         let swipeRightGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
         swipeRightGestureRecognizer.numberOfTouchesRequired = 3
-        swipeRightGestureRecognizer.direction = .Right
+        swipeRightGestureRecognizer.direction = .right
         imageView.addGestureRecognizer(swipeRightGestureRecognizer)
     }
-    @IBAction func handlePan(sender: UIPanGestureRecognizer) {
-        let translation = sender.translationInView(self.view)
+    @IBAction func handlePan(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: self.view)
         imageView.center = CGPoint(x:imageView.center.x + translation.x,y:imageView.center.y + translation.y)
-        sender.setTranslation(CGPointZero, inView: self.view)
+        sender.setTranslation(CGPoint.zero, in: self.view)
     }
-    @IBAction func handlePinch(sender: UIPinchGestureRecognizer) {
-        imageView.transform = CGAffineTransformScale(imageView.transform,sender.scale, sender.scale)
+    @IBAction func handlePinch(_ sender: UIPinchGestureRecognizer) {
+        imageView.transform = imageView.transform.scaleBy(x: sender.scale, y: sender.scale)
         sender.scale = 1
     }
-    @IBAction func handleRotation(sender: UIRotationGestureRecognizer) {
-        imageView.transform = CGAffineTransformRotate(imageView.transform, sender.rotation)
+    @IBAction func handleRotation(_ sender: UIRotationGestureRecognizer) {
+        imageView.transform = imageView.transform.rotate(sender.rotation)
         sender.rotation = 0
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func handleSwipe(sender: UISwipeGestureRecognizer) {
-        if sender.direction == .Left {
+    func handleSwipe(_ sender: UISwipeGestureRecognizer) {
+        if sender.direction == .left {
             imageNo += 1
             if imageNo == images.count {imageNo = 0}
-        } else if sender.direction == .Right {
+        } else if sender.direction == .right {
             imageNo -= 1
             if imageNo == -1 {imageNo = images.count - 1}
         }
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 
 }
 extension ViewController:UIGestureRecognizerDelegate {
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
 }
