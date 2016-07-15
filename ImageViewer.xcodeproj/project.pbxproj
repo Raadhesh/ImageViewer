@@ -14,6 +14,9 @@
 		B99B5B811CCAC16000730F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99B5B7F1CCAC16000730F34 /* LaunchScreen.storyboard */; };
 		B99B5B8C1CCAC16000730F34 /* ImageViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B5B8B1CCAC16000730F34 /* ImageViewerTests.swift */; };
 		B99B5B971CCAC16000730F34 /* ImageViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B5B961CCAC16000730F34 /* ImageViewerUITests.swift */; };
+		B9FD4CE01D39923800C5E315 /* CradleMountain.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B9FD4CDD1D39923800C5E315 /* CradleMountain.JPG */; };
+		B9FD4CE11D39923800C5E315 /* Laguna69.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B9FD4CDE1D39923800C5E315 /* Laguna69.JPG */; };
+		B9FD4CE21D39923800C5E315 /* PatagoniaSky.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B9FD4CDF1D39923800C5E315 /* PatagoniaSky.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		B99B5B921CCAC16000730F34 /* ImageViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99B5B961CCAC16000730F34 /* ImageViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerUITests.swift; sourceTree = "<group>"; };
 		B99B5B981CCAC16000730F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FD4CDD1D39923800C5E315 /* CradleMountain.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CradleMountain.JPG; sourceTree = "<group>"; };
+		B9FD4CDE1D39923800C5E315 /* Laguna69.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Laguna69.JPG; sourceTree = "<group>"; };
+		B9FD4CDF1D39923800C5E315 /* PatagoniaSky.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PatagoniaSky.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		B99B5B751CCAC16000730F34 /* ImageViewer */ = {
 			isa = PBXGroup;
 			children = (
+				B9FD4CDC1D39923800C5E315 /* Images */,
 				B99B5B761CCAC16000730F34 /* AppDelegate.swift */,
 				B99B5B781CCAC16000730F34 /* ViewController.swift */,
 				B99B5B7A1CCAC16000730F34 /* Main.storyboard */,
@@ -123,6 +130,16 @@
 				B99B5B981CCAC16000730F34 /* Info.plist */,
 			);
 			path = ImageViewerUITests;
+			sourceTree = "<group>";
+		};
+		B9FD4CDC1D39923800C5E315 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B9FD4CDD1D39923800C5E315 /* CradleMountain.JPG */,
+				B9FD4CDE1D39923800C5E315 /* Laguna69.JPG */,
+				B9FD4CDF1D39923800C5E315 /* PatagoniaSky.JPG */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +205,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Craig Grummitt";
 				TargetAttributes = {
 					B99B5B721CCAC16000730F34 = {
@@ -229,9 +246,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9FD4CE11D39923800C5E315 /* Laguna69.JPG in Resources */,
 				B99B5B811CCAC16000730F34 /* LaunchScreen.storyboard in Resources */,
 				B99B5B7E1CCAC16000730F34 /* Assets.xcassets in Resources */,
 				B99B5B7C1CCAC16000730F34 /* Main.storyboard in Resources */,
+				B9FD4CE21D39923800C5E315 /* PatagoniaSky.JPG in Resources */,
+				B9FD4CE01D39923800C5E315 /* CradleMountain.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +436,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.interactivecoconut.ImageViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -439,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.interactivecoconut.ImageViewerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageViewer.app/ImageViewer";
 			};
 			name = Release;
@@ -461,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.interactivecoconut.ImageViewerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TEST_TARGET_NAME = ImageViewer;
 			};
 			name = Release;
