@@ -34,11 +34,11 @@ class ViewController: UIViewController {
         sender.setTranslation(CGPoint.zero, in: self.view)
     }
     @IBAction func handlePinch(_ sender: UIPinchGestureRecognizer) {
-        imageView.transform = imageView.transform.scaleBy(x: sender.scale, y: sender.scale)
+        imageView.transform = imageView.transform.scaledBy(x: sender.scale, y: sender.scale)
         sender.scale = 1
     }
     @IBAction func handleRotation(_ sender: UIRotationGestureRecognizer) {
-        imageView.transform = imageView.transform.rotate(sender.rotation)
+        imageView.transform = imageView.transform.rotated(by: sender.rotation)
         sender.rotation = 0
     }
     override func didReceiveMemoryWarning() {
