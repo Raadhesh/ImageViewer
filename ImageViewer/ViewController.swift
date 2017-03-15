@@ -17,16 +17,15 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     let tapGestureRecognizer =
       UITapGestureRecognizer(target: self, action: #selector(handleTap))
-    
     tapGestureRecognizer.numberOfTouchesRequired = 1
     tapGestureRecognizer.numberOfTapsRequired = 2
     imageView.addGestureRecognizer(tapGestureRecognizer)
     
     let tapGestureRecognizer2 =
       UITapGestureRecognizer(target: self, action: #selector(handleTap))
-    
     tapGestureRecognizer2.numberOfTouchesRequired = 2
     tapGestureRecognizer2.numberOfTapsRequired = 2
     imageView.addGestureRecognizer(tapGestureRecognizer2)
