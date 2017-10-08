@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-  func handleTap(_ sender: UITapGestureRecognizer) {
+  @objc func handleTap(_ sender: UITapGestureRecognizer) {
     if (sender.numberOfTouchesRequired == 1) {
       imageNo += 1
       if imageNo == images.count {imageNo = 0}
